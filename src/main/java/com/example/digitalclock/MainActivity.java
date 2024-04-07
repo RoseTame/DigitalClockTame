@@ -1,6 +1,5 @@
 package com.example.digitalclock;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -9,6 +8,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 import java.text.SimpleDateFormat;
@@ -116,31 +116,13 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.light:
-                setLightTheme();
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
                 break;
             case R.id.night:
-                setNightTheme();
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
                 break;
         }
         return super.onOptionsItemSelected(item);
-    }
-
-    public void setLightTheme() {
-        layout.setBackgroundColor(Color.WHITE);
-        tvHourMinute.setTextColor(Color.BLACK);
-        tvSecond.setTextColor(Color.BLACK);
-        tvDate.setTextColor(Color.BLACK);
-        tvWeek.setTextColor(Color.BLACK);
-        tvAP.setTextColor(Color.BLACK);
-    }
-
-    public void setNightTheme() {
-        layout.setBackgroundColor(Color.BLACK);
-        tvHourMinute.setTextColor(Color.WHITE);
-        tvSecond.setTextColor(Color.WHITE);
-        tvDate.setTextColor(Color.WHITE);
-        tvWeek.setTextColor(Color.WHITE);
-        tvAP.setTextColor(Color.WHITE);
     }
 
     @Override
