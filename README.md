@@ -1,6 +1,20 @@
 # DigitalClockTame
-### 安卓小型程序数字时钟开发
+### 安卓小型程序 数字时钟开发
 
-![menu](https://gitee.com/RoseTame/pic/raw/master/blog/202404092305755.jpg)![night](https://gitee.com/RoseTame/pic/raw/master/blog/202404092306446.jpg)
+#### 一、题目
 
-![light](https://gitee.com/RoseTame/pic/raw/master/blog/202404092311299.jpeg)
+<img src="https://gitee.com/RoseTame/pic/raw/master/blog/202404102012337.png" width="100%">
+
+#### 二、效果展示
+
+<center class="half">
+    <img src="https://gitee.com/RoseTame/pic/raw/master/blog/202404102027412.jpg" width="30%">
+    <img src="https://gitee.com/RoseTame/pic/raw/master/blog/202404102025278.jpg" width="30%">
+    <img src="https://gitee.com/RoseTame/pic/raw/master/blog/202404102024102.jpg" width="30%">
+
+</center>
+
+
+
+
+
